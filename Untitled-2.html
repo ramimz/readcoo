@@ -1,0 +1,28 @@
+<html>
+
+<style>
+   
+</style>
+
+<body>
+<div>
+get cookies
+   </div> 
+</body>
+<script>
+(function(){
+	
+    var clickIdFromLocalStorage = document.cookie.split('; ')?.find(cookie => cookie.startsWith('smiclickId='))?.split('=')?.[1];
+
+var clickIdFromLocalStorage = document.cookie.split('; ')?.find(cookie => cookie.startsWith('smiclickId='))?.split('=')?.[1];
+
+console.log('clickIdFromLocalStorage',clickIdFromLocalStorage)
+// if(clickIdFromLocalStorage){
+// var scriptElement = document.createElement("script");
+// scriptElement.src = "https://europe-west1-smi-fnac.cloudfunctions.net/pixel/purchase?firebaseClickId=" + clickIdFromLocalStorage + "&sum=" + afprice + "&custom_field2=" + custom_field2 + "&custom_field3=" + custom_field3 + "&custom_field4=" + custom_field4 ;
+// document.head.appendChild(scriptElement);
+// } 
+
+})();
+</script>
+</html>
